@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CV — Rizki Rahmatullah</title>
+<style>
+  :root{--accent:#064e3b;--muted:#556b72}
+  body{font-family:Inter,system-ui,Arial;line-height:1.4;margin:0;background:#f6f8fa;color:#0b2630;padding:28px}
+  .page{max-width:900px;margin:0 auto;background:white;padding:28px;border-radius:10px;box-shadow:0 6px 24px rgba(2,6,23,0.08)}
+  header{display:flex;gap:18px;align-items:center}
+  .photo{width:110px;height:110px;border-radius:10px;overflow:hidden;flex:0 0 110px;border:3px solid #edf7f3}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .hgroup{flex:1}
+  h1{margin:0;font-size:22px;color:var(--accent)}
+  .subtitle{margin:6px 0 0;color:var(--muted);font-weight:600}
+  .contact{margin-top:10px;color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:18px}
+  .section{margin-bottom:12px}
+  h3{margin:0 0 8px;font-size:14px;color:#102c2b}
+  p.small{margin:0;color:var(--muted);font-size:13px}
+  ul{margin:6px 0 0;padding-left:16px;color:#12353a}
+  .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+  .skill{background:#eef7f4;padding:6px 8px;border-radius:8px;font-size:13px;color:#034036}
+  .muted{color:var(--muted);font-size:13px}
+  footer{margin-top:18px;font-size:12px;color:var(--muted);text-align:center}
+  @media (max-width:880px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="photo">
+        <img src="foto-rizki.jpg" alt="Foto Rizki Rahmatullah">
+      </div>
+      <div class="hgroup">
+        <h1>Rizki Rahmatullah S.Kom</h1>
+        <div class="subtitle">Web Developer • Sistem Informasi • Automasi (Python)</div>
+        <div class="contact">
+          Email: <a href="mailto:rizki.rahmatullah@example.com">rahasiarizki2@gmail.com</a> • Telp: 0814 1090 2865 • Lokasi: Indonesia
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="section">
+          <h3>Profil Singkat</h3>
+          <p class="small">Lulusan S1 Sistem Informasi. Berpengalaman mendukung operasional institusi pemerintahan, disiplin, cepat belajar, dan fokus membangun solusi web praktis (HTML/CSS/JS, Python/Streamlit). Mencari posisi junior-mid di web development atau automation.</p>
+        </section>
+
+        <section class="section">
+          <h3>Pengalaman Kerja & Proyek</h3>
+          <ul>
+            <li><strong>Posisi Pendukung — Istana Negara (2020–2024)</strong><br class="muted"><span class="muted">Mendukung operasional, kebijakan keamanan, dan koordinasi tim internal. Pembelajaran kerja profesional.</span></li>
+            <li><strong>Sistem Absensi (Project)</strong><br class="muted"><span class="muted">Streamlit + Google Sheets integration — otomatisasi laporan absensi dan export CSV.</span></li>
+            <li><strong>Inventaris Tanaman (Skripsi)</strong><br class="muted"><span class="muted">Sistem informasi CRUD inventaris tanaman berbasis web.</span></li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>Pendidikan</h3>
+          <ul>
+            <li><strong>S1 Sistem Informasi</strong> — Univeritas Bina Sarana Informatika (Tahun lulus 2025)</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>Testimoni Singkat</h3>
+          <p class="small">"Rizki bekerja dengan disiplin, cepat belajar, dan menghasilkan solusi yang rapi." — Rekan Kerja / Supervisor.</p>
+        </section>
+      </main>
+
+      <aside>
+        <section class="section">
+          <h3>Keahlian</h3>
+          <div class="skill-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Streamlit</span>
+            <span class="skill">WordPress</span>
+            <span class="skill">Git</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Sertifikat & Pelatihan</h3>
+          <ul>
+            <li>Pelatihan Web analisis program BNSP LSP — Tahun 2024</li>
+            <li>Course: Microsoft excel  — Tahun 2023</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>Bahasa & Lainnya</h3>
+          <ul>
+            <li>Bahasa Indonesia (native)</li>
+            <li>Bahasa Inggris (dasar–menengah)</li>
+            <li>Bahasa jepang (dasar–menengah)</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer>CV dibuat ikyy : <span id="date"></span></footer>
+  </div>
+
+<script>document.getElementById('date').textContent = new Date().toLocaleDateString('id-ID');</script>
+</body>
+</html>
